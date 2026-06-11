@@ -7,7 +7,7 @@ public class Cyclic {
             int correct=arr[i]-1;
             if(arr[correct]!=arr[i]){
                 int temp=arr[correct];
-                arr[correct]=arr[i];
+                arr[correct]=arr[i]; 
                 arr[i]=temp;
             }else{
                 i++;
