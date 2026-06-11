@@ -24,6 +24,6 @@ class hello{
     }
 
     public static void main(String[] args) {
-        sout
+        System.out.println(new hello().lemonadeChange(new int[]{5,5,5,10,20}));
     }
 }
