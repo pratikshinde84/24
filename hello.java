@@ -5,7 +5,10 @@ class hello{
             if(i==5){
                 five++;
             }else if(i==10){
-                if(five>=1)five--;
+                if(five>=1){
+                    five--;
+                    ten++;
+                }
                 else{
                     return false;
                 }
