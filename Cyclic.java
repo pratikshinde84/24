@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Cyclic {
     static void sort(int arr[]){
         int i=0;
-        while(i<arr.length){
+        while(i<arr.length){ 
             int correct=arr[i]-1;
             if(arr[correct]!=arr[i]){
                 int temp=arr[correct];
