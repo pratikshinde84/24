@@ -16,6 +16,6 @@ public class Cyclic {
         System.out.println(Arrays.toString(arr));
     } 
     public static void main(String[] args) { 
-        sort(new int[]{5,3,2,1,4});
+        sort(new int[]{5,3,2,1,4});  
     }
 }
