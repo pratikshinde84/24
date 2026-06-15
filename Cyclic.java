@@ -12,7 +12,7 @@ public class Cyclic {
             }else{
                 i++;
             }
-        }
+        }  
         System.out.println(Arrays.toString(arr));
     } 
     public static void main(String[] args) { 
