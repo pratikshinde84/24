@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class Cyclic {
     static int solve(int bt[]) {
@@ -27,6 +28,6 @@ public class Cyclic {
     } 
     public static void main(String[] args) { 
         sort(new int[]{5,3,2,1,4});  
-        
+        System.out.println(solve(new int[]{1,2,3,4}));
     }
 }
