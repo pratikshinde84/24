@@ -6,6 +6,9 @@ public class Cyclic {
         PriorityQueue<Integer> pq=new PriorityQueue<>();
         int ans=0;
         int current=0;
+        for(int i:bt){
+            pq.add(i);
+        }
         while(!pq.isEmpty()){
             ans+=current;
             current+=pq.poll();
