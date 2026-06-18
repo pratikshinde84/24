@@ -10,6 +10,8 @@ class trial{
             if(zero==3){
                 count++;
                 zero=1;
+            }else{
+                zero=0;
             }
         }
         if(f[f.length-1]==0&&zero>0){
