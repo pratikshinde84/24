@@ -1,25 +1,19 @@
 class trial{
     public boolean canPlaceFlowers(int[] f, int n) {
-        if(n==0)return true;
-        int count=0,zero=0;
-        if(f[0]==0&&f[1]==0){
-            count++;
-        }
-        for(int i=1;i<f.length-1;i++){
-            if(f[i]==0)zero++;
-            if(zero==3){
-                count++;
-                zero=1;
-            }else{
-                zero=0;
+        int count=0;
+        for(int i=0;i<f.length;i++){
+            if(f[i]==0){
+                boolean left=i==0||f[i-1]==0;
+                boolean right=i==f.length-1||f[i+1]==0;
+                if(left&&right){
+                    f[i]=1;
+                    count++;
+                }
             }
-        }
-        if(f[f.length-1]==0&&zero>0){
-            count++;
         }
         return count>=n;
     }
     public static void main(String[] args) {
-        System.out.println(new trial().canPlaceFlowers(new int[]{1,0,1,0,1,0,1}, 1));
+        System.out.println(new trial().canPlaceFlowers(new int[]{1,0,0,0,1}, 1));
     }
 }
