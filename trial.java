@@ -19,7 +19,7 @@ class trial{
     }
     ArrayList<Integer> boundaryTraversal(Node root) {
         ArrayList<Integer> ans=new ArrayList<>();
-        if(root==null){
+        if(!isLeaf(root)){
             return ans;
         }
         ans.add(root.data);
@@ -27,6 +27,11 @@ class trial{
         leafNodes(root,ans);
         rightBoundary(root.right,ans);
         return ans;
+    }
+    private boolean isLeaf(trial.Node root) {
+        if(root.left==null&&root.right==null){
+            return true;
+        }        return false;
     }
     void leftBoundary(Node root, ArrayList<Integer> ans){
         if(root==null||root.left==null&&root.right==null){
