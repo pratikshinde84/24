@@ -16,4 +16,4 @@ class trial{
     public static void main(String[] args) {
         System.out.println(new trial().canPlaceFlowers(new int[]{1,0,0,0,1}, 1));
     } 
-}
+} 
