@@ -60,7 +60,16 @@ class trial{
         leafNodes(root.left,ans);
         leafNodes(root.right,ans);
     }
-    
+    class Node{
+        int data;
+        Node left;
+        Node right;
+        Node(int data){
+            this.data=data;
+            this.left=null;
+            this.right=null;
+        }
+    }
     public static void main(String[] args) {
         System.out.println(new trial().canPlaceFlowers(new int[]{1,0,0,0,1}, 1));
     } 
