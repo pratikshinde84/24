@@ -1,4 +1,4 @@
-for i in range(5):
+i=3
+while(i>0):
     print(i)
-str="Hello, World!"
-print(str.upper())
+    i -= 1
