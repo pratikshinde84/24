@@ -1,2 +1,3 @@
 a="pratik"
-print(a)
+for i in range(5):
+    print(a)
