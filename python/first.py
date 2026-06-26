@@ -1,0 +1,2 @@
+a="pratik"
+print(a)
