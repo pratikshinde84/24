@@ -10,6 +10,7 @@ while start<end:
     end-=1
 print(lst)
 
+
 cards = [1, 2, 3, 4]
  
 random.shuffle(cards)
