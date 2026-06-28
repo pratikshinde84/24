@@ -9,8 +9,9 @@ while start<end:
     start=start+1
     end-=1
 print(lst)
-cards = [1, 2, 3, 4]
 
+cards = [1, 2, 3, 4]
+ 
 random.shuffle(cards)
 print(math.gcd(12,14))
 
