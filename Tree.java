@@ -51,7 +51,7 @@ class Tree{
             q.offer(root);
         }  
         int i=1; 
-        while(!q.isEmpty()&&i<ar.length){
+        while(!q.isEmpty()&&i<ar.length){ 
             Node temp=q.poll();
             temp.left=new Node(ar[i++]);
             q.offer(temp.left);
