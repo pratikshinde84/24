@@ -1,3 +1,5 @@
+package TCS;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -49,7 +51,7 @@ class Tree{
         if(ar.length>0){
             root=new Node(ar[0]);
             q.offer(root);
-        }  
+        }
         int i=1; 
         while(!q.isEmpty()&&i<ar.length){ 
             Node temp=q.poll();
