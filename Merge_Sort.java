@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Merge_Sort {
 
@@ -72,9 +73,14 @@ public class Merge_Sort {
     }
 
     public static void main(String[] args) {
-        int ar[] = {1};
+//        int ar[] = {1};
         Merge_Sort m=new Merge_Sort(2);
-
-//        System.out.println(new Merge_Sort().missingNum(ar));
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        char ar[]=new char[n];
+        for(int i=0;i<n;i++){
+            ar[i]=sc.next().charAt(0);
+        }
+        System.out.println(Arrays.toString(ar));
     }
 }
