@@ -10,7 +10,7 @@ public class SmallestStable {
             m=Math.max(m,nums[i]);
             maxi[i]=m;
         }
-        m=nums[0];
+        m=nums[n];
         for(int i=n;i>=0;i--){
             m=Math.min(m,nums[i]);
             mini[i]=m;
@@ -24,6 +24,6 @@ public class SmallestStable {
     }
 
     public static void main(String[] args) {
-        System.out.println(new SmallestStable().firstStableIndex(new int[]{6,4,0,3,9},3));
+        System.out.println(new SmallestStable().firstStableIndex(new int[]{6,4,0,3,9},1));
     }
 }
