@@ -22,10 +22,22 @@ public class Recursion {
         reverse(--end,++start,ar);
     }
 
+    public String restoreString(String s, int[] indices) {
+        int n=indices.length;
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(indices[j]==i){
+                    sb.append(s.charAt(j));
+                    break;
+                }
+            }
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
-        new Recursion().oneton(5);
-        int ar[]={1,2,3,4,5,6};
-        new Recursion().reverse(ar.length-1,0,ar);
-        System.out.println(Arrays.toString(ar));
+
+        System.out.println(new Recursion().restoreString("codeleet",new int[]{4,5,6,7,0,2,1,3}));
     }
 }
